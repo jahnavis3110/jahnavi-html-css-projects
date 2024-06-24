@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+
+:root {
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+* {
+    color: #ececf5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://t4.ftcdn.net/jpg/05/96/61/99/360_F_596619956_pMBtjoGHCqZKzRWwsYUY41xAIk2T2dvt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    max-width: 700px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-form {
+    background-color: var(--color-darkblue-alpha);
+    padding: 2rem;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+}
+
+#survey-form {
+    width: 100%;
+}
+
+.personal-info input,
+.personal-info select,
+.comment-section textarea {
+    color: #0c0c0c;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    outline: none;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px #838396;
+    transition: ease-in-out 150ms;
+}
+
+.personal-info input[type="number"] {
+    width: calc(100% - 10px);
+}
+
+#gender {
+    color: #000002; 
+    background-color: #fdfdfd; 
+}
+
+#gender option {
+    color: #000000; 
+}
+
+#survey-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+#survey-form h2 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.recommend-section {
+    margin-top: 2rem;
+}
+
+.recommend-section fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.recommend-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+}
+
+.survey-container {
+    margin-top: 2rem;
+}
+
+.survey-container fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.survey-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.survey-table th,
+.survey-table td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.survey-table th:first-child,
+.survey-table td:first-child {
+    text-align: left;
+}
+
+.survey-table th {
+    background-color: var(--color-darkblue-alpha);
+    color: #ececf5;
+}
+
+.comment-section {
+    margin-top: 2rem;
+}
+
+.comment-section textarea {
+    border: 1px solid #ccc;
+}
+
+#survey-form input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-green);
+    border: none;
+    color: #ececf5;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+input[type="radio"] {
+    width: 13px; /* adjust to desired size */
+    height: 13px; /* adjust to desired size */
+    transform: scale(1.5); /* adjust scale as needed */
+    margin-right: 10px; /* optional: to add space between radio button and label */
+    vertical-align: middle; /* optional: to vertically center the radio button with the text */
+}
+
+@media (max-width: 768px) {
+    #header #title {
+        font-size: 1.5rem;
+    }
+
+    #header #description {
+        font-size: 1rem;
+    }
+}

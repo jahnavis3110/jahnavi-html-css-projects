@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./technical.css">
+  <title>a Technical Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>JAVA Documentation</h1>
+    </header>
+    <ol id="nav-list">
+      <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+      <a href="#Use" class="nav-link"><li>Use</li></a>
+      <a href="#JavaScript_and_Java" class="nav-link"><li>JavaScript and Java</li></a>
+      <a href="#Hello_world" class="nav-link"><li>Hello world</li></a>
+      <a href="#Comments" class="nav-link"><li>Comments</li></a>
+      <a href="#Variables" class="nav-link"><li>Variables</li></a>
+      <a href="#Declaring_Variables" class="nav-link"><li>Declaring_Variables</li></a>
+      <a href="#Identifiers" class="nav-link"><li>Identifiers</li></a>
+      <a href="#Reference" class="nav-link"><li>Reference</li></a>
+    </ol>
+  </nav>
+  
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <article>
+      <p>
+        Java is a versatile and widely-used programming language renowned for its portability, security, and robustness. Developed by Sun Microsystems in the mid-1990s, Java has since become a cornerstone of modern software development. Its platform independence allows Java programs to run on any device that supports Java Virtual Machine (JVM), making it ideal for creating applications ranging from mobile apps to enterprise-level systems. Java's object-oriented approach promotes modular and reusable code, enhancing developer productivity and software maintainability. Additionally, Java's strong emphasis on security features such as bytecode verification and sandboxing ensures that applications remain secure against malicious attacks. As technology continues to evolve, Java remains a steadfast choice for developers seeking reliability, performance, and scalability in their projects.
+      </p>
+      </article>
+    </section>
+    
+    <section id="Use" class="main-section">
+      <header>
+        <h2>Use</h2>
+      </header>
+      <article>
+      <p>
+        <ol>
+          <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+          <li>It is one of the most popular programming languages in the world</li>
+          <li>It has a large demand in the current job market</li>
+          <li>It is easy to learn and simple to use</li>
+          <li>It is open-source and free</li>
+          <li>It is secure, fast and powerful</li>
+          <li>It has huge community support (tens of millions of developers)</li>
+          <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+          <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+        </ol>
+      </p>
+      </article>
+    </section>
+
+    <section id="JavaScript_and_Java" class="main-section">
+      <header>
+        <h2>JavaScript and Java</h2>
+      </header>
+      <article>
+      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+      <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+      <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+      </article>
+    </section>
+    
+    <section id="Hello_world" class="main-section">
+      <header>
+        <h2>Hello world</h2>
+      </header>
+      <article>
+      <p>To get started with writing Java, create a Java file called Main.java write your first "Hello world" Java code:</p>
+      <code>public class Main {
+        public static void main(String[] args) {
+          System.out.println("Hello World");
+        }
+      }</code>
+      </article>
+    </section>
+
+    <section id="Comments" class="main-section">
+      <header>
+        <h2>Comments</h2>
+      </header>
+      <article>
+      <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+      <p>Single-line comments start with two forward slashes (//).
+        Any text between // and the end of the line is ignored by Java (will not be executed).
+        This example uses a single-line comment before a line of code:</p>
+        <code>// This is a comment
+          System.out.println("Hello World");
+        </code>
+      <p>Multi-line comments start with /* and ends with */.
+        Any text between /* and */ will be ignored by Java.  
+        This example uses a multi-line comment (a comment block) to explain the code:</p>
+        <code>/* The code below will print the words Hello World
+          to the screen, and it is amazing */
+          System.out.println("Hello World");
+        </code>
+      </article>
+    </section>
+
+    <section id="Variables" class="main-section">
+      <header>
+        <h2>Variables</h2>
+      </header>
+      <article>
+      <p>ariables are containers for storing data values.
+        In Java, there are different types of variables, for example:</p>
+        <ol>
+          <li>String - stores text, such as "Hello". String values are surrounded by double quotes</li>
+          <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+          <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+          <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+          <li>boolean - stores values with two states: true or false</li>
+        </ol>
+      </article>
+
+
+    <section id="Declaring_Variables" class="main-section">
+      <header>
+        <h2>Declaring_Variables</h2>
+      </header>
+      <article>
+      <p>To create a variable, you must specify the type and assign it a value:</p>
+        <code>type variableName = value;</code>
+
+      <p>Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+        To create a variable that should store text, look at the following example:</p>
+      <p>Example
+        Create a variable called name of type String and assign it the value "Jahnavi":
+        <code>String name = "Jahnavi";
+          System.out.println(name);
+        </code>
+      </p>
+
+      <p>To create a variable that should store a number, look at the following example:</p>
+      <p>Example
+        Create a variable called myNum of type int and assign it the value 15:
+        <code>int myNum = 15;
+          System.out.println(myNum);
+        </code>
+      </p>
+
+      <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+      <p>Example
+        <code>int myNum;
+          myNum = 15;
+          System.out.println(myNum);
+        </code>
+      </p>
+
+      <p><b>Final Variables</b></p>
+      <p>If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
+        <code>final int myNum = 15;
+          myNum = 20;  // will generate an error: cannot assign a value to a final variable
+        </code>
+      </p>
+
+      <p><b>Other Types</b></p>
+      <p>A demonstration of how to declare variables of other types:</p>
+      <p>Example
+        <code>int myNum = 5;
+          float myFloatNum = 5.99f;
+          char myLetter = 'D';
+          boolean myBool = true;
+          String myText = "Hello";
+        </code>
+      </p>
+
+      </article>
+    </section>
+
+    <section id="Identifiers" class="main-section">
+      <header>
+        <h2>Identifiers</h2>
+      </header>
+      <article>
+      <p>All Java variables must be identified with unique names.
+        These unique names are called identifiers.
+        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+        Note: It is recommended to use descriptive names in order to create understandable and maintainable code:
+      <p>Example:
+        <code>// Good
+          int minutesPerHour = 60;
+          
+          // OK, but not so easy to understand what m actually is
+          int m = 60;
+        </code>
+      </p>
+      <p>The general rules for naming variables are:
+        <ol>
+          <li>Names can contain letters, digits, underscores, and dollar signs</li>
+          <li>Names must begin with a letter</li>
+          <li>Names should start with a lowercase letter, and cannot contain whitespace</li>
+          <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+          <li>Names are case-sensitive ("myVar" and "myvar" are different variables)</li>
+          <li>Reserved words (like Java keywords, such as int or boolean) cannot be used as names</li>
+        </ol>
+      </p>
+      </article>
+    </section>
+
+    <section id="Reference" class="main-section">
+      <header>
+        <h2>Reference</h2>
+      </header>
+      <article>
+      <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/java/default.asp">W3 schools</a></p>
+      </article>
+    </section>
+  </main>
+  
+  <footer></footer>
+</body>
+</html>
+
